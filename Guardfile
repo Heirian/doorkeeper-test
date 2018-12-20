@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-guard :rspec, cmd: 'rspec' do
+guard :rspec, cmd: 'rspec --format documentation' do
   require 'guard/rspec/dsl'
   dsl = Guard::RSpec::Dsl.new(self)
 
@@ -14,6 +14,7 @@ guard :rspec, cmd: 'rspec' do
   ruby = dsl.ruby
   dsl.watch_spec_files_for(ruby.lib_files)
 
+  rails = dsl.rails
   watch(%r{^app/controllers/(.+)_(controller)\.rb$}) { 'spec/features' }
   watch(%r{^app/models/(.+)\.rb$}) { 'spec/models' }
   watch(rails.controllers) do |m|
