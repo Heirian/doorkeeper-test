@@ -57,7 +57,7 @@ group :development, :test do
   gem 'simplecov', '~> 0.16.1', require: false
   # factory_bot_rails provides integration between factory_bot and rails 3 or newer
   # (currently just automatic factory definition loading)
-  gem 'factory_bot_rails', '~> 4.11', '>= 4.11.1', require: false
+  gem 'factory_bot_rails', '~> 4.11', '>= 4.11.1'
   # Shoulda Matchers provides RSpec- and Minitest-compatible one-liners that test common Rails functionality.
   # These tests would otherwise be much longer, more complex, and error-prone.
   gem 'shoulda-matchers', '~> 3.1', '>= 3.1.2', require: false
