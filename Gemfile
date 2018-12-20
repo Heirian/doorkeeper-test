@@ -33,6 +33,8 @@ gem 'rack-cors', '~> 1.0', '>= 1.0.2', require: 'rack/cors'
 # JSON API(jsonapi.org) serializer that works with rails and can be used to serialize any kind of ruby objects
 gem 'fast_jsonapi', '~> 1.5'
 
+gem 'devise-jwt', '~> 0.5.8'
+
 group :development, :test do
   # Autoload dotenv in Rails.
   gem 'dotenv-rails', '~> 2.5'
